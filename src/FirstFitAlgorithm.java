@@ -5,9 +5,7 @@ public class FirstFitAlgorithm {
 
     ArrayList<Integer> InputData = new ArrayList<>();
     int NumbOfContainer = 0;
-    int Counter = 0;
     int NumbOfCompare = 0;
-    ArrayList<Integer> Buffer = new ArrayList<>();
 
     public FirstFitAlgorithm(int[][] InputData) {
         for (int i = 0; i < 20; i++)
@@ -47,8 +45,7 @@ public class FirstFitAlgorithm {
         System.out.println("|||FFA|||");
         System.out.println("Кол-во сравнений: " + NumbOfCompare);
         System.out.println("Кол-во контейнеров: " + NumbOfContainer);
-        NumbOfContainer = 0;
-        NumbOfCompare = 0;
+
     }
 
 }

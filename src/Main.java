@@ -15,7 +15,7 @@ public class Main {
             System.out.println();
         }
 
-        FirstFitAlgorithm first = new FirstFitAlgorithm(InputData);
+        WorstFitAlgorithm first = new WorstFitAlgorithm(InputData);
         first.printInputData();
         System.out.println();
         first.Algorithm();

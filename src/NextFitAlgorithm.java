@@ -31,7 +31,6 @@ public class NextFitAlgorithm {
         System.out.println("|||NFA|||");
         System.out.println("Кол-во сравнений: " + NumbOfCompare);
         System.out.println("Кол-во контейнеров: "+NumbOfContainer);
-        NumbOfContainer =0;
-        NumbOfCompare =0;
+
     }
 }
