@@ -7,13 +7,15 @@ public class BestFitAlgorithm {
     int NumbOfCompare = 0;
 
     public BestFitAlgorithm(int[][] InputData) {
-        for (int i = 0; i < 20; i++)
-            this.InputData.add(InputData[0][i]);
-    }
-
-    public void printInputData() {
-        for (Integer integer : InputData)
-            System.out.print(integer + " ");
+        for (int j=0; j<3; j++){
+            if(j==2)
+                NumbOfContainer++;
+            for (int i = 0; i < 20; i++){
+                this.InputData.add(InputData[j][i]);
+            }
+            System.out.println("\nРяд № " + (j+1));
+            Algorithm();
+        }
     }
 
     public void Algorithm() {
@@ -38,8 +40,23 @@ public class BestFitAlgorithm {
                 }
             }
         }
-        System.out.println("|||BFA|||");
-        System.out.println("Кол-во сравнений: " + NumbOfCompare);
-        System.out.println("Кол-во контейнеров: " + NumbOfContainer);
+        printResult();
+        NumbOfContainer=0;
+        NumbOfCompare=0;
+        InputData.clear();
+    }
+    public void printResult(){
+        System.out.println("Кол-во сравнений: "+ NumbOfCompare+
+                "\nКол-во контейнеров: "+ NumbOfContainer);
+    }
+
+    public void allNumbers(int[][] InputData){
+        for (int j=0; j <3; j++){
+            for (int i=0; i<20; i++){
+                this.InputData.add(InputData[j][i]);
+            }
+        }
+        System.out.println("\nВсе числа");
+        Algorithm();
     }
 }
