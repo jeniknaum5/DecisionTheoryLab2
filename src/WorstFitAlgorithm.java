@@ -5,7 +5,6 @@ public class WorstFitAlgorithm {
     ArrayList<Integer> InputData = new ArrayList<>();
     int NumbOfContainer = 1;
     int NumbOfCompare = 0;
-    int MinSize = 0;
 
     public WorstFitAlgorithm(int[][] InputData) {
         for (int i = 0; i < 20; i++)
