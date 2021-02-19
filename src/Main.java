@@ -1,5 +1,6 @@
 import java.util.ArrayList;
-
+//{{67,12,92,29,2,68,31,2,74,7,18,16,83,77,87,72,73,57,62,25},
+//{{54,73,15,6,51,64,90,63,91,72,37,37,59,28,71,80,87,56,90,41},
 public class Main {
 
     public static int[][] InputData = {{67,12,92,29,2,68,31,2,74,7,18,16,83,77,87,72,73,57,62,25},
@@ -14,10 +15,11 @@ public class Main {
             System.out.println();
         }
 
-        NextFitAlgorithm first = new NextFitAlgorithm(InputData);
+        FirstFitAlgorithm first = new FirstFitAlgorithm(InputData);
         first.printInputData();
         System.out.println();
         first.Algorithm();
+
     }
 
 
